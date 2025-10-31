@@ -28,7 +28,7 @@ export const Arcana = {
   ELNA: '엘나',
   POAL: '포알',
   BLEN: '블랜',
-  BAGGER: '배거',
+  GUNNER: '거너',
 } as const
 
 export const Weapon = {

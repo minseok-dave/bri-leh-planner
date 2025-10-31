@@ -45,8 +45,8 @@ export const ARCANA_OPTIONS = [
     value: Arcana.BLEN,
   },
   {
-    label: '배거',
-    value: Arcana.BAGGER,
+    label: '거너',
+    value: Arcana.GUNNER,
   },
 ]
 
