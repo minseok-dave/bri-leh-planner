@@ -3,15 +3,18 @@ import { z } from 'zod'
 
 import type { PlannerFormSchema } from '@/schemas/pages'
 
-const usePlanner = () => {
+const useForm = () => {
   const form = useFormContext<z.infer<typeof PlannerFormSchema>>()
 
-  const profileFile = useWatch({
+  const profiles = useWatch({
     control: form.control,
-    name: 'profileFile',
+    name: 'selectedProfiles',
   })
 
-  console.log(profileFile)
+  return {
+    form,
+    profiles,
+  }
 }
 
-export default usePlanner
+export default useForm

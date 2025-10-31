@@ -3,6 +3,7 @@ import { useMemo } from 'react'
 import Step1 from '@/components/pages/planner/step1'
 import Step2 from '@/components/pages/planner/step2'
 import Step3 from '@/components/pages/planner/step3'
+import Step4 from '@/components/pages/planner/step4'
 import { Button } from '@/components/ui/button'
 import { Form } from '@/components/ui/form'
 import useForm from '@/hooks/pages/planner/use-form'
@@ -16,6 +17,7 @@ const Planner = () => {
       1: <Step1 />,
       2: <Step2 />,
       3: <Step3 />,
+      4: <Step4 />,
     }
     return components[step as keyof typeof components]
   }, [step])

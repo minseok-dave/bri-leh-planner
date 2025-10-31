@@ -9,4 +9,5 @@ export const PlannerFormSchema = z.object({
   profileFile: z.any().optional(), // 전체 ProfileJSON 객체 저장
   parsedProfiles: z.array(z.any()).optional(), // 파싱된 Profile 배열
   fileName: z.string().nullable().optional(),
+  selectedProfiles: z.array(z.any()).optional(),
 })
