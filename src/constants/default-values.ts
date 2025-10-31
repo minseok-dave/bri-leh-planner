@@ -16,7 +16,7 @@ export const EMPTY_PROFILE = {
       has_special: false,
     },
     uppercut: {
-      rate: 0,
+      rate_level: 0,
       has_increased_protection: false,
     },
     suport_shot: {

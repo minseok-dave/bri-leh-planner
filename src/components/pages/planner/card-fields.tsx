@@ -307,7 +307,7 @@ const CardFields = ({ index, className, onRemove }: CardFieldsProps) => {
 
               <SubSection title="연막">
                 <FormField
-                  name={`parsedProfiles.${index}.debuff.fragrach.has_throwing_star`}
+                  name={`parsedProfiles.${index}.debuff.smoke`}
                   control={form.control}
                   render={({ field }) => (
                     <FormItem className="flex-[0_0_auto] flex flex-col">
@@ -368,7 +368,7 @@ const CardFields = ({ index, className, onRemove }: CardFieldsProps) => {
                   control={form.control}
                   render={({ field }) => (
                     <FormItem className="flex-[0_0_auto] flex flex-col justify-between">
-                      <FormLabel className="text-gray-500">미르</FormLabel>
+                      <FormLabel className="text-gray-500">미르/케라</FormLabel>
                       <FormControl>
                         <Input
                           value={field.value}

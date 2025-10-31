@@ -119,7 +119,7 @@ const Step2 = () => {
         </Button>
       </div>
 
-      <div className="flex flex-col gap-6 overflow-y-auto max-h-[1080px] border border-gray-200 rounded-md p-4">
+      <div className="flex flex-col gap-6 overflow-y-auto max-h-[900px] border border-gray-200 rounded-md p-4">
         {fields.length > 0 ? (
           fields.map((field, index) => (
             <CardFields
