@@ -1,8 +1,11 @@
+import { Info } from 'lucide-react'
+
 import { Button } from '@/components/ui/button'
 import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
@@ -49,6 +52,15 @@ const Home = () => {
           </form>
         </Form>
       </CardContent>
+      <CardFooter>
+        <div className="flex items-center gap-2 peer mr-2 hover:cursor-auto">
+          <Info className="size-4" />
+          <span className="text-gray-800 select-none">힌트</span>
+        </div>
+        <span className="text-gray-800 peer-hover:opacity-100 opacity-0 transition-all duration-300">
+          힌트는 없어요 ㅋㅋ
+        </span>
+      </CardFooter>
     </Card>
   )
 }
