@@ -1,5 +1,5 @@
 function App() {
-  return <>호스팅 테스트 ㅋ</>
+  return <div className="text-3xl font-bold underline">호스팅 테스트 ㅋ</div>
 }
 
 export default App
