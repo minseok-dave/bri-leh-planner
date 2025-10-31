@@ -1,4 +1,5 @@
 import { Info } from 'lucide-react'
+import { Navigate } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -17,10 +18,17 @@ import {
   FormItem,
   FormLabel,
 } from '@/components/ui/form'
+import { AUTH_CREATED_AT } from '@/constants/env'
 import useForm from '@/hooks/pages/home/use-form'
+import useAuthStorage from '@/stores/use-auth-storage'
 
 const Home = () => {
   const { form, onSubmit } = useForm()
+  const createdAt = useAuthStorage((state) => state.createdAt)
+
+  if (createdAt === AUTH_CREATED_AT) {
+    return <Navigate to="/bri-leh-planner/planner" />
+  }
 
   return (
     <Card>
